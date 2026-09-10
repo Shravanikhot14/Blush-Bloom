@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blush & Bloom - Offers">
+    <title>Offers - Blush & Bloom</title>
+    
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- React Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1 me-2"></i>Blush & Bloom
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Makeup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?category=Skincare">Skincare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-icons">
+                    <a href="#" class="navbar-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="navbar-icon">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <a href="wishlist.html" class="navbar-icon">
+                        <i class="bi bi-heart"></i>
+                        <span class="wishlist-count" style="display: none;">0</span>
+                    </a>
+                    <a href="cart.html" class="navbar-icon">
+                        <i class="bi bi-bag"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Offers</li>
+                </ol>
+            </nav>
+            <h1 class="page-title">Exclusive Offers</h1>
+            <p class="text-muted">Don't miss out on these amazing deals</p>
+        </div>
+    </section>
+
+    <!-- Hero Offer Banner -->
+    <section class="py-5 bg-blush">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <span class="badge bg-danger mb-3">LIMITED TIME</span>
+                    <h2 class="display-4 fw-bold">Summer Beauty Sale</h2>
+                    <p class="lead">Up to 40% OFF on all skincare products</p>
+                    <p class="mb-4">Get ready for glowing skin with our exclusive summer collection. Use code SUMMER40 at checkout.</p>
+                    <div class="d-flex gap-3">
+                        <a href="products.html?category=Skincare" class="btn btn-primary btn-lg">Shop Skincare</a>
+                        <a href="products.html" class="btn btn-outline-primary btn-lg">View All</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop" 
+                         alt="Summer Sale" class="img-fluid rounded-custom shadow-custom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beauty Treats For You</h2>
+                <p>Exclusive offers and discounts</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card h-100">
+                        <span class="offer-badge">30% OFF</span>
+                        <h3>Summer Sale</h3>
+                        <p>On all skincare products</p>
+                        <p class="text-muted small">Valid until: Aug 31, 2024</p>
+                        <a href="products.html?category=Skincare" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card h-100">
+                        <span class="offer-badge">BUY 2 GET 1</span>
+                        <h3>Lip Love</h3>
+                        <p>On all lip products</p>
+                        <p class="text-muted small">Valid until: Sep 15, 2024</p>
+                        <a href="products.html?subcategory=Lipsticks" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card h-100">
+                        <span class="offer-badge">FREE SHIPPING</span>
+                        <h3>Above ₹999</h3>
+                        <p>On all orders</p>
+                        <p class="text-muted small">Always available</p>
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card h-100">
+                        <span class="offer-badge">NEW CUSTOMER</span>
+                        <h3>20% OFF</h3>
+                        <p>First order discount</p>
+                        <p class="text-muted small">Use code: WELCOME20</p>
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="py-5 bg-lavender">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop" 
+                         alt="Bundle Offer" class="img-fluid rounded-custom shadow-custom">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="badge bg-primary mb-3">BUNDLE DEAL</span>
+                    <h2 class="display-5 fw-bold">Complete Skincare Routine</h2>
+                    <p class="lead">Get 5 products for just ₹2,499</p>
+                    <p class="mb-4">Build your perfect skincare routine with our curated bundle. Includes cleanser, toner, serum, moisturizer, and sunscreen.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Worth ₹4,500</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Saves ₹2,001</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Free shipping included</li>
+                    </ul>
+                    <a href="products.html?category=Skincare" class="btn btn-primary btn-lg">Shop Bundle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Specific Offers -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Category Offers</h2>
+                <p>Special discounts on your favorite categories</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=250&fit=crop" 
+                             alt="Makeup Offer" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">25% OFF</span>
+                            <h4>Makeup Essentials</h4>
+                            <p class="card-text text-muted">Foundations, concealers, and powders</p>
+                            <a href="products.html?category=Makeup" class="btn btn-outline-primary btn-sm">Shop Makeup</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=250&fit=crop" 
+                             alt="Skincare Offer" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success text-white mb-2">35% OFF</span>
+                            <h4>Skincare Favorites</h4>
+                            <p class="card-text text-muted">Serums, moisturizers, and treatments</p>
+                            <a href="products.html?category=Skincare" class="btn btn-outline-primary btn-sm">Shop Skincare</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=250&fit=crop" 
+                             alt="Lip Care Offer" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger text-white mb-2">40% OFF</span>
+                            <h4>Lip Care Special</h4>
+                            <p class="card-text text-muted">Lipsticks, glosses, and balms</p>
+                            <a href="products.html?subcategory=Lip Care" class="btn btn-outline-primary btn-sm">Shop Lip Care</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Terms & Conditions</h2>
+                <p>Please read our offer terms carefully</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">General Offer Terms</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Offers cannot be combined with other promotions</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Valid while supplies last</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Free shipping applies to orders above ₹999</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Discount codes are case-sensitive</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Returns accepted within 7 days of delivery</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Offer valid on in-stock items only</li>
+                            </ul>
+                            
+                            <hr class="my-4">
+                            
+                            <h5 class="card-title mb-3">New Customer Offer</h5>
+                            <p class="text-muted">Use code WELCOME20 for 20% off your first order. Minimum order value ₹500. One-time use per customer.</p>
+                            
+                            <hr class="my-4">
+                            
+                            <h5 class="card-title mb-3">Bundle Deal</h5>
+                            <p class="text-muted">Bundle includes 5 skincare products. Customization available. Cannot be modified with other discounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-5">
+        <div class="container">
+            <h2>Never Miss an Offer</h2>
+            <p>Subscribe to get exclusive deals and early access to sales</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Blush & Bloom</h4>
+                    <p>Your premium destination for makeup and skincare products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html?category=Makeup">Makeup</a></li>
+                        <li><a href="products.html?category=Skincare">Skincare</a></li>
+                        <li><a href="products.html">Best Sellers</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="bi bi-geo-alt me-2"></i>123 Beauty Lane, Mumbai</li>
+                        <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+                        <li><i class="bi bi-envelope me-2"></i>hello@blushandbloom.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blush & Bloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Products</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products..." id="modal-search-input">
+                        <button class="btn btn-primary" type="button" onclick="performSearch()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+    <!-- Product Data -->
+    <script src="js/products.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Page-specific JavaScript -->
+    <script>
+        function performSearch() {
+            const searchTerm = document.getElementById('modal-search-input').value;
+            if (searchTerm.trim()) {
+                window.location.href = `products.html?search=${encodeURIComponent(searchTerm)}`;
+            }
+        }
+
+        // Allow search on Enter key
+        document.getElementById('modal-search-input')?.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>

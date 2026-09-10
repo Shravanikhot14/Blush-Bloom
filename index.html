@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blush & Bloom - Premium Makeup & Skincare E-commerce">
+    <title>Blush & Bloom - Premium Beauty & Skincare</title>
+    
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- React Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1 me-2"></i>Blush & Bloom
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Makeup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?category=Skincare">Skincare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-icons">
+                    <a href="#" class="navbar-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="navbar-icon">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <a href="wishlist.html" class="navbar-icon">
+                        <i class="bi bi-heart"></i>
+                        <span class="wishlist-count" style="display: none;">0</span>
+                    </a>
+                    <a href="cart.html" class="navbar-icon">
+                        <i class="bi bi-bag"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Beauty, Your Bloom.</h1>
+                <p class="hero-subtitle">Discover makeup and skincare made to bring out your natural glow.</p>
+                <div class="hero-buttons">
+                    <a href="products.html?category=Makeup" class="btn btn-primary btn-lg">Shop Makeup</a>
+                    <a href="products.html?category=Skincare" class="btn btn-outline-primary btn-lg">Explore Skincare</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop by Category</h2>
+                <p>Find your perfect beauty match</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card" onclick="window.location.href='products.html?category=Makeup'">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=300&fit=crop" alt="Makeup">
+                    <div class="category-overlay">
+                        <h3>Makeup</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='products.html?category=Skincare'">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop" alt="Skincare">
+                    <div class="category-overlay">
+                        <h3>Skincare</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='products.html?subcategory=Lip Care'">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=300&fit=crop" alt="Lip Care">
+                    <div class="category-overlay">
+                        <h3>Lip Care</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='products.html?subcategory=Face Care'">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Face Care">
+                    <div class="category-overlay">
+                        <h3>Face Care</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='products.html?subcategory=Eye Makeup'">
+                    <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=400&h=300&fit=crop" alt="Eye Makeup">
+                    <div class="category-overlay">
+                        <h3>Eye Makeup</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='products.html?subcategory=Body Care'">
+                    <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&h=300&fit=crop" alt="Body Care">
+                    <div class="category-overlay">
+                        <h3>Body Care</h3>
+                        <button class="btn">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers animate-on-scroll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beauty Best Sellers</h2>
+                <p>Our most loved products</p>
+            </div>
+            
+            <div class="row" id="best-sellers-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-outline-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Banner -->
+    <section class="skincare-banner animate-on-scroll">
+        <div class="container">
+            <div class="skincare-content">
+                <h2>Glow Starts With Good Skin.</h2>
+                <p>Build your everyday skincare ritual with products designed for healthy-looking, radiant skin.</p>
+                <a href="products.html?category=Skincare" class="btn btn-primary btn-lg">Shop Skincare</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Makeup Collection -->
+    <section class="makeup-collection animate-on-scroll" id="collections">
+        <div class="container">
+            <div class="section-title">
+                <h2>Makeup Collection</h2>
+                <p>Express yourself with our curated makeup essentials</p>
+            </div>
+            
+            <div class="collection-tabs">
+                <button class="collection-tab active" data-category="Lipsticks">Lipsticks</button>
+                <button class="collection-tab" data-category="Lip Gloss">Lip Gloss</button>
+                <button class="collection-tab" data-category="Blush">Blush</button>
+                <button class="collection-tab" data-category="Foundation">Foundation</button>
+                <button class="collection-tab" data-category="Concealer">Concealer</button>
+                <button class="collection-tab" data-category="Mascara">Mascara</button>
+                <button class="collection-tab" data-category="Eyeshadow">Eyeshadow</button>
+            </div>
+            
+            <div class="row" id="makeup-collection-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section animate-on-scroll" id="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beauty Treats For You</h2>
+                <p>Exclusive offers and discounts</p>
+                <a href="offers.html" class="btn btn-outline-primary btn-sm">View All Offers</a>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card">
+                        <span class="offer-badge">30% OFF</span>
+                        <h3>Summer Sale</h3>
+                        <p>On all skincare products</p>
+                        <a href="products.html?category=Skincare" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card">
+                        <span class="offer-badge">BUY 2 GET 1</span>
+                        <h3>Lip Love</h3>
+                        <p>On all lip products</p>
+                        <a href="products.html?subcategory=Lipsticks" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card">
+                        <span class="offer-badge">FREE SHIPPING</span>
+                        <h3>Above ₹999</h3>
+                        <p>On all orders</p>
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="offer-card">
+                        <span class="offer-badge">NEW CUSTOMER</span>
+                        <h3>20% OFF</h3>
+                        <p>First order discount</p>
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty Quiz -->
+    <section class="beauty-quiz animate-on-scroll">
+        <div class="container">
+            <div class="quiz-container">
+                <h2>Find Your Beauty Match</h2>
+                <p class="text-center mb-4">Answer a few questions to get personalized product recommendations</p>
+                
+                <form id="beauty-quiz-form" class="quiz-form">
+                    <div class="form-group">
+                        <label for="skin-type">What is your skin type?</label>
+                        <select id="skin-type" required>
+                            <option value="">Select your skin type</option>
+                            <option value="oily">Oily</option>
+                            <option value="dry">Dry</option>
+                            <option value="combination">Combination</option>
+                            <option value="normal">Normal</option>
+                            <option value="sensitive">Sensitive</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skin-concern">What is your main skin concern?</label>
+                        <select id="skin-concern" required>
+                            <option value="">Select your concern</option>
+                            <option value="acne">Acne</option>
+                            <option value="aging">Anti-aging</option>
+                            <option value="dryness">Dryness</option>
+                            <option value="dullness">Dullness</option>
+                            <option value="sensitivity">Sensitivity</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="makeup-style">What makeup style do you prefer?</label>
+                        <select id="makeup-style" required>
+                            <option value="">Select your style</option>
+                            <option value="natural">Natural</option>
+                            <option value="glam">Glamorous</option>
+                            <option value="dramatic">Dramatic</option>
+                            <option value="minimal">Minimal</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="finish">What finish do you like?</label>
+                        <select id="finish" required>
+                            <option value="">Select your preference</option>
+                            <option value="matte">Matte</option>
+                            <option value="dewy">Dewy</option>
+                            <option value="natural">Natural</option>
+                            <option value="glowing">Glowing</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="price-range">What is your preferred price range?</label>
+                        <select id="price-range" required>
+                            <option value="">Select your range</option>
+                            <option value="budget">Budget (Under ₹500)</option>
+                            <option value="mid">Mid-range (₹500-₹1000)</option>
+                            <option value="premium">Premium (Above ₹1000)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Get Recommendations</button>
+                </form>
+                
+                <div id="quiz-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section animate-on-scroll" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Blush & Bloom</h2>
+                <p>Blush & Bloom is a beauty destination created to make makeup and skincare feel simple, enjoyable, and personal. We believe that beauty should be accessible to everyone, and our carefully curated collection of products reflects this philosophy.</p>
+                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter animate-on-scroll">
+        <div class="container">
+            <h2>Get Your Glow Updates</h2>
+            <p>Sign up for beauty tips, new launches, exclusive offers and more.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Blush & Bloom</h4>
+                    <p>Your premium destination for makeup and skincare products. Discover your beauty with us.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html?category=Makeup">Makeup</a></li>
+                        <li><a href="products.html?category=Skincare">Skincare</a></li>
+                        <li><a href="products.html">Best Sellers</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="bi bi-geo-alt me-2"></i>123 Beauty Lane, Mumbai</li>
+                        <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+                        <li><i class="bi bi-envelope me-2"></i>hello@blushandbloom.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blush & Bloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Products</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products..." id="modal-search-input">
+                        <button class="btn btn-primary" type="button" onclick="performSearch()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+    <!-- Product Data -->
+    <script src="js/products.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Page-specific JavaScript -->
+    <script>
+        // Load best sellers on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBestSellers();
+            loadMakeupCollection('Lipsticks');
+            initCollectionTabs();
+        });
+
+        function loadBestSellers() {
+            const bestSellers = products.slice(0, 8);
+            const grid = document.getElementById('best-sellers-grid');
+            
+            let html = '';
+            bestSellers.forEach(product => {
+                const isInWishlist = wishlist.includes(product.id);
+                const priceHTML = product.discountPrice 
+                    ? `<span class="text-decoration-line-through text-muted">₹${product.price.toLocaleString()}</span>
+                       <span class="ms-2 text-primary">₹${product.discountPrice.toLocaleString()}</span>`
+                    : `<span class="text-primary">₹${product.price.toLocaleString()}</span>`;
+
+                html += `
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100 border-0 shadow-sm">
+                            <div class="product-image-container position-relative">
+                                <img src="${product.image}" alt="${product.name}" class="card-img-top product-image">
+                                <button class="wishlist-btn position-absolute top-0 end-0 m-2 btn btn-light rounded-circle" 
+                                        onclick="toggleWishlist(${product.id})">
+                                    <i class="bi bi-heart${isInWishlist ? '-fill text-danger' : ''}"></i>
+                                </button>
+                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0">
+                                    <button class="btn btn-primary me-2" onclick="viewProduct(${product.id})">Quick View</button>
+                                    <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted small mb-1">${product.category}</p>
+                                <h6 class="card-title mb-2">${product.name}</h6>
+                                <div class="mb-2">
+                                    ${renderStars(product.rating)}
+                                    <span class="text-muted small">(${product.reviews})</span>
+                                </div>
+                                <div class="mb-3">${priceHTML}</div>
+                                <button class="btn btn-outline-primary w-100 btn-sm" onclick="addToCart(${product.id})">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            grid.innerHTML = html;
+        }
+
+        function loadMakeupCollection(category) {
+            const makeupProducts = products.filter(p => p.subcategory === category);
+            const grid = document.getElementById('makeup-collection-grid');
+            
+            if (makeupProducts.length === 0) {
+                grid.innerHTML = '<div class="col-12 text-center py-4"><p class="text-muted">No products found in this category.</p></div>';
+                return;
+            }
+            
+            let html = '';
+            makeupProducts.forEach(product => {
+                const isInWishlist = wishlist.includes(product.id);
+                const priceHTML = product.discountPrice 
+                    ? `<span class="text-decoration-line-through text-muted">₹${product.price.toLocaleString()}</span>
+                       <span class="ms-2 text-primary">₹${product.discountPrice.toLocaleString()}</span>`
+                    : `<span class="text-primary">₹${product.price.toLocaleString()}</span>`;
+
+                html += `
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="product-card card h-100 border-0 shadow-sm">
+                            <div class="product-image-container position-relative">
+                                <img src="${product.image}" alt="${product.name}" class="card-img-top product-image">
+                                <button class="wishlist-btn position-absolute top-0 end-0 m-2 btn btn-light rounded-circle" 
+                                        onclick="toggleWishlist(${product.id})">
+                                    <i class="bi bi-heart${isInWishlist ? '-fill text-danger' : ''}"></i>
+                                </button>
+                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0">
+                                    <button class="btn btn-primary me-2" onclick="viewProduct(${product.id})">Quick View</button>
+                                    <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted small mb-1">${product.category}</p>
+                                <h6 class="card-title mb-2">${product.name}</h6>
+                                <div class="mb-2">
+                                    ${renderStars(product.rating)}
+                                    <span class="text-muted small">(${product.reviews})</span>
+                                </div>
+                                <div class="mb-3">${priceHTML}</div>
+                                <button class="btn btn-outline-primary w-100 btn-sm" onclick="addToCart(${product.id})">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            grid.innerHTML = html;
+        }
+
+        function initCollectionTabs() {
+            const tabs = document.querySelectorAll('.collection-tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    loadMakeupCollection(this.dataset.category);
+                });
+            });
+        }
+
+        function performSearch() {
+            const searchTerm = document.getElementById('modal-search-input').value;
+            if (searchTerm.trim()) {
+                window.location.href = `products.html?search=${encodeURIComponent(searchTerm)}`;
+            }
+        }
+
+        // Allow search on Enter key
+        document.getElementById('modal-search-input')?.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
