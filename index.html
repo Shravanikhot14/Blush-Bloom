@@ -35,13 +35,13 @@
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Makeup</a>
+                        <a class="nav-link" href="makeup.html">Makeup</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html?category=Skincare">Skincare</a>
+                        <a class="nav-link" href="skincare.html">Skincare</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#collections">Collections</a>
+                        <a class="nav-link" href="collections.html">Collections</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="offers.html">Offers</a>
@@ -55,9 +55,10 @@
                     <a href="#" class="navbar-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
                         <i class="bi bi-search"></i>
                     </a>
-                    <a href="#" class="navbar-icon">
+                    <a href="login.html" class="navbar-icon login-link">
                         <i class="bi bi-person"></i>
                     </a>
+                    <a href="#" class="navbar-icon account-link" style="display: none;"></a>
                     <a href="wishlist.html" class="navbar-icon">
                         <i class="bi bi-heart"></i>
                         <span class="wishlist-count" style="display: none;">0</span>
@@ -78,8 +79,8 @@
                 <h1 class="hero-title">Your Beauty, Your Bloom.</h1>
                 <p class="hero-subtitle">Discover makeup and skincare made to bring out your natural glow.</p>
                 <div class="hero-buttons">
-                    <a href="products.html?category=Makeup" class="btn btn-primary btn-lg">Shop Makeup</a>
-                    <a href="products.html?category=Skincare" class="btn btn-outline-primary btn-lg">Explore Skincare</a>
+                    <a href="makeup.html" class="btn btn-primary btn-lg">Shop Makeup</a>
+                    <a href="skincare.html" class="btn btn-outline-primary btn-lg">Explore Skincare</a>
                 </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
             </div>
             
             <div class="category-grid">
-                <div class="category-card" onclick="window.location.href='products.html?category=Makeup'">
+                <div class="category-card" onclick="window.location.href='makeup.html'">
                     <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=300&fit=crop" alt="Makeup">
                     <div class="category-overlay">
                         <h3>Makeup</h3>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
                 
-                <div class="category-card" onclick="window.location.href='products.html?category=Skincare'">
+                <div class="category-card" onclick="window.location.href='skincare.html'">
                     <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop" alt="Skincare">
                     <div class="category-overlay">
                         <h3>Skincare</h3>
@@ -110,7 +111,7 @@
                     </div>
                 </div>
                 
-                <div class="category-card" onclick="window.location.href='products.html?subcategory=Lip Care'">
+                <div class="category-card" onclick="window.location.href='skincare.html'">
                     <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=300&fit=crop" alt="Lip Care">
                     <div class="category-overlay">
                         <h3>Lip Care</h3>
@@ -118,7 +119,7 @@
                     </div>
                 </div>
                 
-                <div class="category-card" onclick="window.location.href='products.html?subcategory=Face Care'">
+                <div class="category-card" onclick="window.location.href='skincare.html'">
                     <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Face Care">
                     <div class="category-overlay">
                         <h3>Face Care</h3>
@@ -126,7 +127,7 @@
                     </div>
                 </div>
                 
-                <div class="category-card" onclick="window.location.href='products.html?subcategory=Eye Makeup'">
+                <div class="category-card" onclick="window.location.href='makeup.html'">
                     <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=400&h=300&fit=crop" alt="Eye Makeup">
                     <div class="category-overlay">
                         <h3>Eye Makeup</h3>
@@ -134,7 +135,7 @@
                     </div>
                 </div>
                 
-                <div class="category-card" onclick="window.location.href='products.html?subcategory=Body Care'">
+                <div class="category-card" onclick="window.location.href='skincare.html'">
                     <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&h=300&fit=crop" alt="Body Care">
                     <div class="category-overlay">
                         <h3>Body Care</h3>
@@ -169,34 +170,11 @@
             <div class="skincare-content">
                 <h2>Glow Starts With Good Skin.</h2>
                 <p>Build your everyday skincare ritual with products designed for healthy-looking, radiant skin.</p>
-                <a href="products.html?category=Skincare" class="btn btn-primary btn-lg">Shop Skincare</a>
+                <a href="skincare.html" class="btn btn-primary btn-lg">Shop Skincare</a>
             </div>
         </div>
     </section>
 
-    <!-- Makeup Collection -->
-    <section class="makeup-collection animate-on-scroll" id="collections">
-        <div class="container">
-            <div class="section-title">
-                <h2>Makeup Collection</h2>
-                <p>Express yourself with our curated makeup essentials</p>
-            </div>
-            
-            <div class="collection-tabs">
-                <button class="collection-tab active" data-category="Lipsticks">Lipsticks</button>
-                <button class="collection-tab" data-category="Lip Gloss">Lip Gloss</button>
-                <button class="collection-tab" data-category="Blush">Blush</button>
-                <button class="collection-tab" data-category="Foundation">Foundation</button>
-                <button class="collection-tab" data-category="Concealer">Concealer</button>
-                <button class="collection-tab" data-category="Mascara">Mascara</button>
-                <button class="collection-tab" data-category="Eyeshadow">Eyeshadow</button>
-            </div>
-            
-            <div class="row" id="makeup-collection-grid">
-                <!-- Products will be loaded dynamically -->
-            </div>
-        </div>
-    </section>
 
     <!-- Offers Section -->
     <section class="offers-section animate-on-scroll" id="offers">
@@ -435,13 +413,14 @@
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
     
+    <!-- Auth JavaScript -->
+    <script src="js/auth.js"></script>
+    
     <!-- Page-specific JavaScript -->
     <script>
         // Load best sellers on page load
         document.addEventListener('DOMContentLoaded', function() {
             loadBestSellers();
-            loadMakeupCollection('Lipsticks');
-            initCollectionTabs();
         });
 
         function loadBestSellers() {
@@ -490,67 +469,6 @@
             grid.innerHTML = html;
         }
 
-        function loadMakeupCollection(category) {
-            const makeupProducts = products.filter(p => p.subcategory === category);
-            const grid = document.getElementById('makeup-collection-grid');
-            
-            if (makeupProducts.length === 0) {
-                grid.innerHTML = '<div class="col-12 text-center py-4"><p class="text-muted">No products found in this category.</p></div>';
-                return;
-            }
-            
-            let html = '';
-            makeupProducts.forEach(product => {
-                const isInWishlist = wishlist.includes(product.id);
-                const priceHTML = product.discountPrice 
-                    ? `<span class="text-decoration-line-through text-muted">₹${product.price.toLocaleString()}</span>
-                       <span class="ms-2 text-primary">₹${product.discountPrice.toLocaleString()}</span>`
-                    : `<span class="text-primary">₹${product.price.toLocaleString()}</span>`;
-
-                html += `
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card h-100 border-0 shadow-sm">
-                            <div class="product-image-container position-relative">
-                                <img src="${product.image}" alt="${product.name}" class="card-img-top product-image">
-                                <button class="wishlist-btn position-absolute top-0 end-0 m-2 btn btn-light rounded-circle" 
-                                        onclick="toggleWishlist(${product.id})">
-                                    <i class="bi bi-heart${isInWishlist ? '-fill text-danger' : ''}"></i>
-                                </button>
-                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0">
-                                    <button class="btn btn-primary me-2" onclick="viewProduct(${product.id})">Quick View</button>
-                                    <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="text-muted small mb-1">${product.category}</p>
-                                <h6 class="card-title mb-2">${product.name}</h6>
-                                <div class="mb-2">
-                                    ${renderStars(product.rating)}
-                                    <span class="text-muted small">(${product.reviews})</span>
-                                </div>
-                                <div class="mb-3">${priceHTML}</div>
-                                <button class="btn btn-outline-primary w-100 btn-sm" onclick="addToCart(${product.id})">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-            
-            grid.innerHTML = html;
-        }
-
-        function initCollectionTabs() {
-            const tabs = document.querySelectorAll('.collection-tab');
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    tabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    loadMakeupCollection(this.dataset.category);
-                });
-            });
-        }
 
         function performSearch() {
             const searchTerm = document.getElementById('modal-search-input').value;
